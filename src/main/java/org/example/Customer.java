@@ -2,30 +2,19 @@ package org.example;
 
 public class Customer extends User{
 
-    private String cardNo;
+    private int id;
     private String firstName;
     private String lastName;
     public boolean turkcellCustomer;
 
-
-    public Customer(int identity, String email, String password, String address, String cardNo, String firstName, String lastName, boolean turkcellCustomer) {
+    public Customer(int identity, String email, String password, String address, int id, String firstName, String lastName, boolean turkcellCustomer) {
         super(identity, email, password, address);
-        this.cardNo = cardNo;
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.turkcellCustomer = turkcellCustomer;
     }
 
-
-
-
-    public String getCardNo() {
-        return cardNo;
-    }
-
-    public void setCardNo(String cardNo) {
-        this.cardNo = cardNo;
-    }
 
     public String getFirstName() {
         return firstName;

@@ -1,14 +1,15 @@
 package org.example;
 
 public class Product extends SubCategory{
+    private int id;
     private String title;
     private String imageUrl;
     private String color;
     private double unitPrice;
 
-
-    public Product(String title, String imageUrl, String color, double unitPrice,String categoryName,String subCategoryName) {
-        super(categoryName,subCategoryName);
+    public Product(String categoryName, int id, int id1, String subCategoryName, int id2, String title, String imageUrl, String color, double unitPrice) {
+        super(categoryName, id, id1, subCategoryName);
+        this.id = id2;
         this.title = title;
         this.imageUrl = imageUrl;
         this.color = color;
@@ -48,4 +49,11 @@ public class Product extends SubCategory{
         this.unitPrice = unitPrice;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }

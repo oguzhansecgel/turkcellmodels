@@ -2,11 +2,14 @@ package org.example;
 
 public class CorporateCustomer extends User{
 
+    private int id;
     private String taxNo;
     private String corporateName;
 
-    public CorporateCustomer(int identity, String email, String password, String address, String taxNo, String corporateName) {
+
+    public CorporateCustomer(int identity, String email, String password, String address, int id, String taxNo, String corporateName) {
         super(identity, email, password, address);
+        this.id = id;
         this.taxNo = taxNo;
         this.corporateName = corporateName;
     }

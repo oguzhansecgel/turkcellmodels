@@ -1,15 +1,16 @@
 package org.example;
 
 public class SubCategory extends Category{
+    private int id;
     private String subCategoryName;
-    public SubCategory(String categoryName) {
-        super(categoryName);
-    }
 
-    public SubCategory(String categoryName, String subCategoryName) {
-        super(categoryName);
+
+    public SubCategory(String categoryName, int id, int id1, String subCategoryName) {
+        super(categoryName, id);
+        this.id = id1;
         this.subCategoryName = subCategoryName;
     }
+
 
     public String getSubCategoryName() {
         return subCategoryName;
