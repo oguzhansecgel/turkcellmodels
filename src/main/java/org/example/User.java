@@ -12,7 +12,10 @@ public class User {
         this.password = password;
         this.address = address;
     }
+    public User()
+    {
 
+    }
     public int getIdentity() {
         return identity;
     }

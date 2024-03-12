@@ -46,6 +46,10 @@ public class Product extends SubCategory{
     }
 
     public void setUnitPrice(double unitPrice) {
+        if(unitPrice<0)
+        {
+            System.out.println("0 dan büyük değer girilmeli");
+        }
         this.unitPrice = unitPrice;
     }
 

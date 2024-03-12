@@ -14,7 +14,10 @@ public class Customer extends User{
         this.lastName = lastName;
         this.turkcellCustomer = turkcellCustomer;
     }
+    public Customer()
+    {
 
+    }
 
     public String getFirstName() {
         return firstName;
