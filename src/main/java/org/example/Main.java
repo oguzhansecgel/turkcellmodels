@@ -3,7 +3,7 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-
+        DiscountProduct product2 = new DiscountProduct();
         Product phone = new Product("Telefon",1,1,"Apple",1,"Apple 15","deneme.jpg","Beyaz",-1);
 
 
@@ -15,7 +15,6 @@ public class Main {
 
         Comment comment = new Comment("Deneme",1,4,"Güzeldi","12.03.2024",1);
 
-        phone.setUnitPrice(-1);
 
     }
 }

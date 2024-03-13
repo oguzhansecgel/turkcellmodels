@@ -8,13 +8,21 @@ public class DiscountProduct extends Product{
         this.discount = discount;
     }
 
+    public DiscountProduct()
+    {
 
+    }
     public int getDiscount() {
 
         return discount;
     }
 
     public void setDiscount(int discount) {
-        this.discount = discount;
+        Customer customer = new Customer();
+        if (customer.isTurkcellCustomer()) {
+            this.discount = discount + 2;
+        } else {
+            this.discount = discount;
+        }
     }
 }

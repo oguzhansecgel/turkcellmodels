@@ -10,7 +10,10 @@ public class SubCategory extends Category{
         this.id = id1;
         this.subCategoryName = subCategoryName;
     }
+    public SubCategory()
+    {
 
+    }
 
     public String getSubCategoryName() {
         return subCategoryName;

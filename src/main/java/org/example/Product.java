@@ -15,7 +15,14 @@ public class Product extends SubCategory{
         this.color = color;
         this.unitPrice = unitPrice;
     }
+    public Product(String title)
+    {
+        this.title=title;
+    }
+    public Product()
+    {
 
+    }
 
     public String getTitle() {
         return title;

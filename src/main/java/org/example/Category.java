@@ -9,7 +9,10 @@ public class Category {
                 this.categoryName = categoryName;
                 this.id = id;
         }
+        public Category()
+        {
 
+        }
 
 
         public String getCategoryName() {
